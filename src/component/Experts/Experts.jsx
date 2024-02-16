@@ -76,7 +76,7 @@ export default function Experts() {
               </li>
               <li>
                 <FaGit />
-                Git & Git Control
+                Git & Version Control
               </li>
               <li>
                 <VscDebug />

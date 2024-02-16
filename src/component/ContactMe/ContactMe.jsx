@@ -5,7 +5,8 @@ import { FiSend } from "react-icons/fi";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { IoMailSharp } from "react-icons/io5";
+import { MdOutlinePhone } from "react-icons/md";
 
 export default function ContactMe() {
   return (
@@ -22,7 +23,7 @@ export default function ContactMe() {
       className="contact-me"
     >
       <div>
-      <h1>Contact Me</h1>
+        <h1>Contact Me</h1>
         <form action="">
           <div>
             <label htmlFor="email">Email</label>
@@ -100,6 +101,14 @@ export default function ContactMe() {
             </a>
           </li>
         </ul>
+        <div className="contact-details">
+          <a href="mailto:mdrahed321@gmail.com">
+            <IoMailSharp /> mdrahed321@gmail.com
+          </a>
+          <a href="tel:08801575088264">
+            <MdOutlinePhone /> 088 01575-088264
+          </a>
+        </div>
       </div>
     </div>
   );
