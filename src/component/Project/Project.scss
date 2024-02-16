@@ -1,0 +1,97 @@
+.project {
+  padding-bottom: 5rem;
+  h1 {
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    font-weight: 400;
+  }
+}
+.project-card {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 300px;
+  color: #111111;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  margin-top: 2rem;
+  h1 {
+    color: #111111;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 0;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+
+  .project-desc {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 2rem;
+    color: #111111;
+  }
+}
+
+.project-view {
+  width: 50%;
+  margin: 2rem auto;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 2rem;
+    li {
+      cursor: pointer;
+      transition: all 300ms ease-in-out;
+      position: relative;
+      p {
+        position: absolute;
+        top: -1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 80px;
+        font-size: 13px;
+        text-align: center;
+        display: none;
+      }
+    }
+    li:hover {
+      color: var(--primary-color);
+      transform: scale(1.3);
+      p{
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .project {
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 3.5rem;
+      font-weight: bold;
+      padding-top: 2rem;
+    }
+  }
+  .project-cards {
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    h1 {
+      color: #111111;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+  }
+}
