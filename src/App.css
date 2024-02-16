@@ -1,5 +1,8 @@
-
-:root{
+:root {
   --primary-color: #0080ef;
   --primary-bg: #000000;
+}
+
+a{
+  color: #111111;
 }

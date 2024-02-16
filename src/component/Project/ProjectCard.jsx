@@ -13,10 +13,39 @@ export default function ProjectCard({ title, sub_title }) {
         laudantium repellendus.
       </p>
 
+      <div className="project-image">
+        <ul>
+          <li>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+
       <div className="project-view">
         <ul>
           <li>
-            <FaGithub />
+            <a
+              href="http://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
             <p>github</p>
           </li>
           <li>

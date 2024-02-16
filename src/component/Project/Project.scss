@@ -1,5 +1,11 @@
 .project {
   padding-bottom: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   h1 {
     text-align: center;
     color: white;
@@ -8,7 +14,7 @@
   }
 }
 .project-card {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   min-height: 300px;
   color: #111111;
@@ -19,13 +25,16 @@
   h1 {
     color: #111111;
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0;
   }
   p {
     text-align: center;
     font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  a:hover {
     color: var(--primary-color);
   }
 
@@ -35,6 +44,23 @@
     text-align: justify;
     padding: 0 2rem;
     color: #111111;
+  }
+
+  .project-image {
+    width: 80%;
+    margin: 1rem auto;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      cursor: pointer;
+      img {
+        max-width: 65px;
+      }
+    }
   }
 }
 
@@ -66,7 +92,7 @@
     li:hover {
       color: var(--primary-color);
       transform: scale(1.3);
-      p{
+      p {
         display: block;
       }
     }
@@ -92,6 +118,14 @@
       color: #111111;
       font-weight: bold;
       font-size: 2.4rem;
+    }
+
+    .project-image {
+      ul {
+        img {
+          max-width: 115px;
+        }
+      }
     }
   }
 }

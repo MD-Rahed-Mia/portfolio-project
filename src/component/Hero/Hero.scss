@@ -25,6 +25,22 @@
     font-weight: 400;
     margin-top: 2rem;
   }
+  .resume-btn {
+    padding: 12px 30px;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: background 400ms ease-in-out;
+  }
+  .resume-btn:hover {
+    background: linear-gradient(to right, #12c2e9, #f64f59);
+    color: white;
+  }
 }
 
 @media screen and (min-width: 1500px) {
