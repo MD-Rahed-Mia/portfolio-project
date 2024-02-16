@@ -121,10 +121,11 @@
     }
 
     .project-image {
-      padding: 20px;
+      width: 80%;
+      overflow-x: hidden;
       ul {
         img {
-          max-width: 115px;
+          max-width: 105px;
         }
       }
     }
