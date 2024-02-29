@@ -12,6 +12,9 @@ import { CiMobile1 } from "react-icons/ci";
 import { FaGit } from "react-icons/fa";
 import { VscDebug } from "react-icons/vsc";
 import { useInView } from "framer-motion";
+import { TbBrandRedux } from "react-icons/tb";
+
+
 import AnimationFactory from "../../factory/anymation";
 
 export default function Experts() {
@@ -19,7 +22,7 @@ export default function Experts() {
   const isView = useInView(ref, { once: false });
 
   return (
-    <div className="expertise">
+    <div className="expertise" id="expertise">
       <h1>My Expertise</h1>
       <div className="expert-cards">
         <AnimationFactory dir={"right"} dirValue={"100px"}>
@@ -52,6 +55,10 @@ export default function Experts() {
             <li>
               <FaReact />
               React
+            </li>
+            <li>
+              <TbBrandRedux />
+              Redux
             </li>
             <li>
               <FaBootstrap />

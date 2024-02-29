@@ -9,6 +9,7 @@ export default function Hero() {
   return (
     <>
       <div
+        id="about"
         className="hero-section"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.2)),url(${HeroBg})`,
@@ -25,7 +26,6 @@ export default function Hero() {
             </p>
             <button className="resume-btn">
               resume <BiSolidFileDoc />
-             
             </button>
           </div>
         </AnimationFactory>

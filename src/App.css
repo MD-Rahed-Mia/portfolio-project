@@ -3,6 +3,7 @@
   --primary-bg: #000000;
 }
 
-a{
+a {
   color: #111111;
+  text-decoration: none;
 }

@@ -11,6 +11,7 @@ import { MdOutlinePhone } from "react-icons/md";
 export default function ContactMe() {
   return (
     <div
+      id="contact"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url(${ContactBg})`,
         backgroundPosition: "center",

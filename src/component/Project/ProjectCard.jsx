@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { MdLiveTv } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
 
-export default function ProjectCard({ title, sub_title }) {
+export default function ProjectCard({ title, sub_title, id }) {
   return (
     <div className="project-card">
       <h1>{title}</h1>
@@ -53,6 +54,12 @@ export default function ProjectCard({ title, sub_title }) {
             <p>go live</p>
           </li>
         </ul>
+      </div>
+
+      <div className="veiw_project">
+        <a href={`/project/${id}`}>
+          <FaCode />
+        </a>
       </div>
     </div>
   );

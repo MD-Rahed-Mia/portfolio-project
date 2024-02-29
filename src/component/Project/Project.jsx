@@ -6,6 +6,7 @@ import ProjectBg from "./../../assets/project_bg.jpg";
 export default function Project() {
   return (
     <div
+      id="project"
       style={{
         backgroundImage: `url(${ProjectBg})`,
         backgroundSize: "cover",
@@ -18,14 +19,17 @@ export default function Project() {
         <ProjectCard
           title={"Shoptop.com"}
           sub_title={"front end | Ecommerce | Responsive"}
+          id="project_1"
         />
         <ProjectCard
           title={"Linkdinclone.com"}
           sub_title={"clone website | social | Responsive"}
+          id="project_2"
         />
         <ProjectCard
           title={"Shoptop.com"}
           sub_title={"front end || Ecommerce || Responsive"}
+          id="project_1"
         />
       </div>
     </div>

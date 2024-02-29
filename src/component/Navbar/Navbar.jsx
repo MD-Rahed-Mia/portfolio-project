@@ -18,19 +18,31 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="logo">
-        <img src={Logo} alt="" />
-      </div>
+      <a href="/">
+        {" "}
+        <div className="logo" id="about">
+          <img src={Logo} alt="" />
+        </div>
+      </a>
       <div className="menu-icon" onClick={handleMenu}>
         {isMenuActive ? <RxCross2 /> : <CiMenuFries />}
       </div>
 
       <div className={isMenuActive ? "nav-menu active" : "nav-menu"}>
         <ul>
-          <li>about</li>
-          <li>project</li>
-          <li>contact</li>
-          <li>blog</li>
+          <li onClick={() => setIsMenuActive(!isMenuActive)}>
+            <a href="/#about">about</a>
+          </li>
+          <li onClick={() => setIsMenuActive(!isMenuActive)}>
+            <a href="/#expertise">expertise</a>
+          </li>
+          <li onClick={() => setIsMenuActive(!isMenuActive)}>
+            <a href="/#project">project</a>
+          </li>
+          <li onClick={() => setIsMenuActive(!isMenuActive)}>
+            <a href="/#contact">contact</a>
+          </li>
+          <li onClick={() => setIsMenuActive(!isMenuActive)}>blog</li>
           <li>
             <ul>
               <li>
