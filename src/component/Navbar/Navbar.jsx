@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <marquee>This project is under development.</marquee>
+      
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
