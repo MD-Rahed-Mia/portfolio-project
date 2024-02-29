@@ -18,12 +18,9 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <a href="/">
-        {" "}
-        <div className="logo" id="about">
-          <img src={Logo} alt="" />
-        </div>
-      </a>
+      <div className="logo">
+        <img src={Logo} alt="" />
+      </div>
       <div className="menu-icon" onClick={handleMenu}>
         {isMenuActive ? <RxCross2 /> : <CiMenuFries />}
       </div>
