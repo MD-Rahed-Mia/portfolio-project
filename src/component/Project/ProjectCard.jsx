@@ -1,65 +1,38 @@
 import React from "react";
+
 import { FaGithub } from "react-icons/fa";
 import { MdLiveTv } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 
-export default function ProjectCard({ title, sub_title, id }) {
+import { IoIosLink } from "react-icons/io";
+
+export default function ProjectCard({ title_img }) {
   return (
     <div className="project-card">
-      <h1>{title}</h1>
-      <p>{sub_title}</p>
-      <p className="project-desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae
-        dignissimos architecto dolores vero, magni neque eligendi reiciendis
-        laudantium repellendus.
-      </p>
+      <div className="project-card-img">
+        <img src={title_img} alt="" />
 
-      <div className="project-image">
-        <ul>
-          <li>
-            <img
-              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </li>
-          <li>
-            <img
-              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </li>
-          <li>
-            <img
-              src="https://plus.unsplash.com/premium_photo-1664361480105-33afc4559c40?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </li>
-        </ul>
+        <div className="project-card-img-overlay">
+          <div>
+            <a href="https://seven-wireless-tay1.vercel.app/" target="_blank"><IoIosLink /></a>
+          </div>
+        </div>
       </div>
-
-      <div className="project-view">
-        <ul>
-          <li>
-            <a
-              href="http://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <p>github</p>
-          </li>
-          <li>
-            <MdLiveTv />
-            <p>go live</p>
-          </li>
-        </ul>
-      </div>
-
-      <div className="veiw_project">
-        <a href={`/project/${id}`}>
-          <FaCode />
-        </a>
+      <div className="project-detail">
+        <div className="project-detail-top">
+          <h2>Seven wireless</h2>
+          <p>Premium quality wireless headphone market place. Where you can get <br />Premium quality headphone in wholesale price.</p>
+        </div>
+        <div className="project-detail-tech">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Redux.js</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

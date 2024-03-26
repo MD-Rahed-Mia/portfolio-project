@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="/#expertise">expertise</a>
           </li>
           <li onClick={() => setIsMenuActive(!isMenuActive)}>
-            <a href="/#project">project</a>
+            <a href="#project">project</a>
           </li>
           <li onClick={() => setIsMenuActive(!isMenuActive)}>
             <a href="/#contact">contact</a>
