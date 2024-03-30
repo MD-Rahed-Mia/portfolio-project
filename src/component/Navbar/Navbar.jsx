@@ -21,12 +21,32 @@ export default function Navbar() {
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
+
+      <div className="menu-icon" onClick={() => setIsMenuActive(!isMenuActive)}>
+        <CiMenuFries />
+      </div>
+
+      <div className={isMenuActive ? "menu-item active" : "menu-item"}>
+        <ul>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#">Skill</a>
+          </li>
+        </ul>
+      </div>
+
+      {/*       
       <div className="menu-icon" onClick={handleMenu}>
         {isMenuActive ? <RxCross2 /> : <CiMenuFries />}
       </div>
 
-      <div className={isMenuActive ? "nav-menu active" : "nav-menu"}>
-        <ul>
+      <div>
+        <ul className={isMenuActive ? "active" : ""}>
           <li onClick={() => setIsMenuActive(!isMenuActive)}>
             <a href="/#about">about</a>
           </li>
@@ -72,7 +92,7 @@ export default function Navbar() {
             </ul>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

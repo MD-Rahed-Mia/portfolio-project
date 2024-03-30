@@ -6,7 +6,13 @@ import { FaCode } from "react-icons/fa";
 
 import { IoIosLink } from "react-icons/io";
 
-export default function ProjectCard({ title_img }) {
+export default function ProjectCard({
+  title_img,
+  live,
+  tech,
+  title,
+  subTitle,
+}) {
   return (
     <div className="project-card">
       <div className="project-card-img">
@@ -14,23 +20,23 @@ export default function ProjectCard({ title_img }) {
 
         <div className="project-card-img-overlay">
           <div>
-            <a href="https://seven-wireless-tay1.vercel.app/" target="_blank"><IoIosLink /></a>
+            <a href={live} target="_blank">
+              <IoIosLink />
+            </a>
           </div>
         </div>
       </div>
       <div className="project-detail">
         <div className="project-detail-top">
-          <h2>Seven wireless</h2>
-          <p>Premium quality wireless headphone market place. Where you can get <br />Premium quality headphone in wholesale price.</p>
+          <h2>{title}</h2>
+          <p>{subTitle}</p>
         </div>
         <div className="project-detail-tech">
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Redux.js</li>
-            <li>Node.js</li>
+            {tech &&
+              tech.map((item, index) => {
+                return <li key={index}>{item}</li>;
+              })}
           </ul>
         </div>
       </div>

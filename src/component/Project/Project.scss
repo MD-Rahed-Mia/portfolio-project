@@ -9,6 +9,17 @@
   }
 }
 
+.project-cards {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .project-card {
   width: 100%;
   margin: 1.5rem auto;

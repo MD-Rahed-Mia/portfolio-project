@@ -8,7 +8,6 @@ import { BiSolidFileDoc } from "react-icons/bi";
 export default function Hero() {
   return (
     <>
-      <marquee>This project is under development.</marquee>
       <div
         id="about"
         className="hero-section"
