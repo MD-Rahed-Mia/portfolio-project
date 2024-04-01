@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectBg from "./../../assets/project_bg.jpg";
 import "./Project.scss";
 import SevenWireless from "./../../assets/Project_image/seven_wireless.png";
-import WebTools from "./../../assets/Project_image/webtools_c.png";
+import Webtools from "./../../assets/Project_image/webtool.png";
 
 const webToolTech = ["HTML", "CSS", "JavaScript", "Node.js"];
 const sevenWirelessTech = ["HTML", "CSS", "SCSS", "JavaScript", "React.js"];
@@ -31,7 +31,7 @@ export default function Project() {
         />
 
         <ProjectCard
-          title_img={WebTools}
+          title_img={Webtools}
           title={"Webtool"}
           subTitle={
             "Web related tools. Where you can find a lot of tools that usually help you."
