@@ -14,7 +14,6 @@ import { VscDebug } from "react-icons/vsc";
 import { useInView } from "framer-motion";
 import { TbBrandRedux } from "react-icons/tb";
 
-
 import AnimationFactory from "../../factory/anymation";
 
 export default function Experts() {
@@ -23,7 +22,7 @@ export default function Experts() {
 
   return (
     <div className="expertise" id="expertise">
-      <h1>My Expertise</h1>
+      <h1>My Key Skill</h1>
       <div className="expert-cards">
         <AnimationFactory dir={"right"} dirValue={"100px"}>
           <div className="expert-card">

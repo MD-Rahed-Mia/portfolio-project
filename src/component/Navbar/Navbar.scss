@@ -25,6 +25,12 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
 .menu-item {
   color: #111;
   background: white;
@@ -48,6 +54,29 @@
 
     li {
       cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .menu-item {
+    overflow: visible;
+    height: auto;
+    max-height: fit-content;
+    background: none;
+    top: 30px;
+
+    ul {
+      flex-direction: row;
+      gap: 2rem;
+
+      li {
+
+        a {
+          color: white;
+        }
+      }
     }
   }
 }

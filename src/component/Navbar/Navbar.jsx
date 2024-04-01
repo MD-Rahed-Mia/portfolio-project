@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { CiMenuFries } from "react-icons/ci";
-import { RxCross2 } from "react-icons/rx";
-import { FaFacebook } from "react-icons/fa";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
 import Logo from "./../../assets/logo.png";
 
 export default function Navbar() {
@@ -23,7 +20,7 @@ export default function Navbar() {
       </div>
 
       <div className="menu-icon" onClick={() => setIsMenuActive(!isMenuActive)}>
-        <CiMenuFries />
+        {isMenuActive ? <RxCross1 /> : <CiMenuFries />}
       </div>
 
       <div className={isMenuActive ? "menu-item active" : "menu-item"}>
@@ -35,64 +32,10 @@ export default function Navbar() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#">Skill</a>
+            <a href="#expertise">Skill</a>
           </li>
         </ul>
       </div>
-
-      {/*       
-      <div className="menu-icon" onClick={handleMenu}>
-        {isMenuActive ? <RxCross2 /> : <CiMenuFries />}
-      </div>
-
-      <div>
-        <ul className={isMenuActive ? "active" : ""}>
-          <li onClick={() => setIsMenuActive(!isMenuActive)}>
-            <a href="/#about">about</a>
-          </li>
-          <li onClick={() => setIsMenuActive(!isMenuActive)}>
-            <a href="/#expertise">expertise</a>
-          </li>
-          <li onClick={() => setIsMenuActive(!isMenuActive)}>
-            <a href="#project">project</a>
-          </li>
-          <li onClick={() => setIsMenuActive(!isMenuActive)}>
-            <a href="/#contact">contact</a>
-          </li>
-          <li onClick={() => setIsMenuActive(!isMenuActive)}>blog</li>
-          <li>
-            <ul>
-              <li>
-                <a
-                  href="http://www.facebook.com/mdrahed24"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/md-rahed-29b63a284/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsLinkedin />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/MD-Rahed-Mia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub />
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 }
